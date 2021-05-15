@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> <%= title %>  </title>
+        <link rel="stylesheet" href="css/layout.css">
+        <%- style %> 
+
+    </head>
+    <body>
+        <!-- this is callled partial code which is common to all the pages in the website -->
+        <%- include('_header') %>
+
+
+            <!-- the contents of all the pages goes here -->
+            <%- body %>
+
+
+        <%- include('_footer') %>   
+        
+    </body>
+</html>
