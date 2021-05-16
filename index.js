@@ -6,20 +6,24 @@ const expressLayout = require('express-ejs-layouts');
 
 const app = express();
 
+const PORT = 3000;
+app.use(express.urlencoded({extended:false}));
 // setting up the static files
 app.use(express.static('./assets'));
 app.use(expressLayout);
+app.set('layout extractStyles',true);
+
 
 // setting up the ejs template engine
 app.set('view engine','ejs');
 app.set('views','./views')
-app.set('layout extractStyles',true);
+
 
 app.use('/',require('./routes'));
 
 
 // setting up the port
-const PORT = 3000;
+
 
 
 
