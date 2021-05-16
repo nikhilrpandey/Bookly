@@ -12,4 +12,7 @@ router.get('/ds',notes_controller.dsNotes);
 router.get('/al',notes_controller.alNotes);
 
 
+// router.get('/')
+
+
 module.exports = router;
