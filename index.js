@@ -8,6 +8,7 @@ const app = express();
 
 const PORT = 3000;
 app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 // setting up the static files
 app.use(express.static('./assets'));
 app.use(expressLayout);

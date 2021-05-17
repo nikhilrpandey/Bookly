@@ -1,0 +1,26 @@
+
+<link rel="stylesheet" href="community_styles.css">
+<h1>
+    Community
+</h1>
+
+<%= console.log(blogs) %> 
+
+    <% blogs.forEach(element => { %>
+        <div class="posts">
+            <h2>
+                <%= element.title %> 
+            </h2>
+            <h3>
+                <%= element.subheading %> 
+            </h3>
+            <h4>
+                <%= element.author %> , <%= element.updatedAt %>  
+            </h4>
+            <p>
+                <%= element.body %> 
+            </p>
+        </div>
+    <% }) %>
+
+
