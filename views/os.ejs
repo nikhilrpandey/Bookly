@@ -1,7 +1,27 @@
-<h1>
-    Welcome to Operating Systems notes.....
-</h1>
+<link rel="stylesheet" href="/css/items_styles.css">
 
-<!-- TODO: create a dynamic webpage displaying the contents in the database for os notes -->
 
-<!-- the displayed data will be in the form of cards as in shopping websites -->
+<main id="wrapper">
+    <h1>
+        Welcome to Operating Systems notes.....
+    </h1>
+    
+    <!-- TODO: create a dynamic webpage displaying the contents in the database for os notes -->
+    
+    <!-- the displayed data will be in the form of cards as in shopping websites -->
+    <div class="cards-wrapper">
+        <% for( let index = 0; index < 12; index++ ) { %>
+            <div class="card">
+                <img class="card-img" src="/images/pdf-logo.png" alt="" style="width: 100%;">
+                <div class="card-container">
+                    <h4><b>Nikhil Pandey</b></h4>
+                    <p>Software Developer</p>
+                </div>
+            </div>
+        <% } %>
+    </div>
+</main>
+
+
+
+

@@ -1,3 +1,37 @@
 .posts{
-    width: 75%;
+    padding: 0 100px 50px 100px;    
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    font-family: poppins;
+}
+.blog-heading ,.blog-subheading, .blog-details {
+    font-family: poppins;
+}
+
+.blog-subheading, .blog-details{
+    color:  #343434;
+    font-weight: 300;
+}
+
+.blog-body{
+    font-family: montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: .003px;
+}
+
+p{
+    padding: 0 100px;
+}
+
+
+.hide-content{
+    height: 2em;
+    overflow: hidden;
 }

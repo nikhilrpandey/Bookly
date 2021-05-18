@@ -6,29 +6,29 @@ const expressLayout = require('express-ejs-layouts');
 
 const app = express();
 
+// setting up the port. TODO: change it at the time of deploying
 const PORT = 3000;
+
+// setting up the body and url parsing middleware
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
+
+
 // setting up the static files
-app.use(express.static('./assets'));
-app.use(expressLayout);
 app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
+app.use(express.static('./assets'));
 
 
 // setting up the ejs template engine
 app.set('view engine','ejs');
-app.set('views','./views')
+app.set('views','./views');
 
+// this should be included at the very end after setting up the views to render styles..
+app.use(expressLayout);
 
+// this will require any incoming request to require the routes index .
 app.use('/',require('./routes'));
-
-
-// setting up the port
-
-
-
-
-
 
 
 

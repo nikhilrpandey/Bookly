@@ -1,30 +1,32 @@
 <!-- TODO: design a navbar which will be common to all the pages -->
 <link rel="stylesheet" href="/css/home_styles.css">
 <nav id="navbar">
-    <ul class="list">
-        <div>
-            <li>
-                <a href="#">
-                    <img src="/images\Bookly.png" alt="logo">
-                </a>
+    <div class="nav-wrapper">
+        <ul class="list">
+            <div>
+                <li>
+                    <a href="/">
+                        <img src="/images/Screenshot (228).png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div>
+            <li class="list-item"><a href="/community/blogs">Community</a></li>
+            <li class="list-item"><a href="">Courses</a></li>
+            <li class="list-item dropdown">
+                <a href="" class="dropdown-btn">Notes</a>
+                <ul class="dropdown-content">
+                    <li><a href="/notes/os">Operating Systems</a></li>
+                    <li><a href="/notes/db">Database</a></li>
+                    <li><a href="/notes/cg">Computer Graphics</a></li>
+                    <li><a href="/notes/ds">Data Structures</a></li>
+                    <li><a href="/notes/al">Algorithms</a></li>
+                </ul>
             </li>
-        </div>
-        <div>
-        <li class="list-item"><a href="/community/blogs">Community</a></li>
-        <li class="list-item"><a href="">Courses</a></li>
-        <li class="list-item dropdown">
-            <a href="" class="dropdown-btn">Notes</a>
-            <ul class="dropdown-content">
-                <li><a href="/notes/os">Operating Systems</a></li>
-                <li><a href="/notes/db">Database</a></li>
-                <li><a href="/notes/cg">Computer Graphics</a></li>
-                <li><a href="/notes/ds">Data Structures</a></li>
-                <li><a href="/notes/al">Algorithms</a></li>
-            </ul>
-        </li>
-        <li class="list-item"><a href="">Projects</a></li>
-        <li class="list-item"><a href="">Papers</a></li>
-        </div>
-        
-    </ul>
+            <li class="list-item"><a href="">Projects</a></li>
+            <li class="list-item"><a href="">Papers</a></li>
+            </div>
+            
+        </ul>
+    </div>
 </nav>

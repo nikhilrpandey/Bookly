@@ -1,5 +1,6 @@
 
-<link rel="stylesheet" href="community_styles.css">
+<link rel="stylesheet" href="/css/community_styles.css">
+<script src="/js/community.js"></script>
 <h1>
     Community
 </h1>
@@ -8,18 +9,19 @@
 
     <% blogs.forEach(element => { %>
         <div class="posts">
-            <h2>
+            <h2 class="blog-heading">
                 <%= element.title %> 
             </h2>
-            <h3>
+            <h3 class="blog-subheading">
                 <%= element.subheading %> 
             </h3>
-            <h4>
+            <h4 class="blog-details">
                 <%= element.author %> , <%= element.updatedAt %>  
             </h4>
-            <p>
+            <p class="blog-body hide-content">
                 <%= element.body %> 
             </p>
+            <span class="show-content"><strong>show more</strong></span>
         </div>
     <% }) %>
 
